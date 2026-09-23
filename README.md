@@ -19,6 +19,13 @@ and opened as a Progressive Web App (PWA).
 
 No account or personal skin-type information is required.
 
+## Data Science Notebook
+
+The complete Data Science methodology, including data preprocessing,
+ingredient feature engineering, Logistic Regression, model evaluation,
+and ingredient similarity analysis, is documented in the following notebook:
+
+[View SkinMatch Data Science Notebook](notebooks/SkinMatch_DataScience.ipynb)
 ---
 
 ## 1. Project Overview
