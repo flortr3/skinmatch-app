@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#F7F1E9" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="SkinMatch" />
+  <meta name="description" content="Explore skincare ingredients, consumer experiences across skin types, and similar formulations." />
+  <link rel="icon" type="image/png" href="./assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>SkinMatch · Know your skincare</title>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <button class="wordmark" id="homeButton" aria-label="SkinMatch home" type="button">
+        <span class="brand-mark">S</span><span>skinmatch<span class="brand-period">.</span></span>
+      </button>
+      <span class="header-caption">YOUR SKINCARE, DECODED</span>
+    </header>
+
+    <main id="app" aria-live="polite">
+      <div class="loading-state"><span class="loading-orb"></span><p>Preparing your skincare library…</p></div>
+    </main>
+
+    <footer class="site-footer">
+      <span>SkinMatch · Data Science course project</span>
+      <span>Historical Sephora review data. Not medical advice.</span>
+    </footer>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
