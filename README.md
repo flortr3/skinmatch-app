@@ -268,6 +268,62 @@ This architecture allows the application to function without
 running Python or retraining models on the user's phone.
 
 ---
+## Reproducing the Data Science Project
+
+The Data Science workflow was developed using Python 3.11.
+
+### 1. Download the Original Dataset
+
+Download the Sephora Products and Skincare Reviews dataset from Kaggle:
+
+https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews
+
+Place the original CSV files in:
+
+`data/raw/`
+
+### 2. Set Up the Python Environment
+
+```bash
+conda create --name skinmatch python=3.11 -y
+conda activate skinmatch
+python -m pip install -r requirements.txt
+```
+
+### 3. Run the Data Science Notebook
+
+Open:
+
+`notebooks/SkinMatch_DataScience.ipynb`
+
+Execute the notebook to reproduce the data cleaning, ingredient feature
+engineering, Logistic Regression experiment, model evaluation, and
+ingredient similarity calculations.
+
+The notebook generates the processed datasets used by the application.
+
+### 4. Export the Application Data
+
+Run:
+
+```bash
+python scripts/export_web.py
+```
+
+The script generates:
+
+`mobile-web/data/skinmatch_mobile.json`
+
+The exported JSON contains the product catalog, ingredient profiles,
+consumer recommendation statistics, and precomputed ingredient
+similarity results.
+
+For GitHub Pages deployment, the contents of `mobile-web` are published
+at the root of the application repository.
+
+The original Kaggle CSV files are not included in this repository.
+
+---
 
 ## 11. Limitations
 
